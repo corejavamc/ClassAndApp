@@ -72,4 +72,23 @@ public class Book {
                "\nTitle: " + getTitle() +
                "\nDescription: " + getDescription();
     }
+
+    /*
+     * Create a method that returns the pricing for a requested number of books.
+     * As an example, five books at $20.00 should return $100, if they are in stock.
+     * If they are not in stock, that should be handled appropriately (hint - you decide).
+     */
+    public String computePrice(int numb) {
+        double sum = 0;
+        String result;
+
+        if (isInStock()) {
+            sum = numb * getPrice();
+            result = "The total price is $" + sum;
+        }
+        else
+            result = "The book is temporally out of stock.";
+
+        return result;
+    }
 }

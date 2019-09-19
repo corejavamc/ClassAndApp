@@ -3,8 +3,11 @@
  * In the main method you shall create an instance of a Book and print the Author, Title and Description.
  */
 
+import java.util.Scanner;
+
 public class BookApplication {
     public static void main(String args[]) {
+
         Book book = new Book();
         book.setTitle("Introduction to Java Spring Boot: Learning By Coding");
         book.setAuthor("Henley, Wolf, Ankomah, Lee, Phimphachanh");
@@ -20,5 +23,25 @@ public class BookApplication {
                     "Guide to writing a resume with examples", 9.99, false);
         System.out.println("Book 2:");
         System.out.println(book2.getDisplayText());
+
+
+        Scanner keybd = new Scanner(System.in);
+        int count;
+
+        System.out.println("Enter a number of the first book: ");
+        count = keybd.nextInt();
+        keybd.nextLine();
+
+        System.out.println(book.computePrice(count));
+
+        System.out.println("Enter a number of the second book: ");
+        count = keybd.nextInt();
+        keybd.nextLine();
+
+        System.out.println(book2.computePrice(count));
+
+
+
+
     }
 }
