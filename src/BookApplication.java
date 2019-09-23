@@ -44,8 +44,5 @@ public class BookApplication {
 
         System.out.println(book2.computePrice(count));
 
-
-
-
     }
 }
