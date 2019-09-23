@@ -1,19 +1,27 @@
 public class House {
-    private int nobedrooms;
-    private int nobathrooms;
-    private int nofloors;
     private String style;
+    private int nobedrooms;
+    private double nobathrooms;
+    private int nofloors;
     private boolean garage;
 
     public House() {
     }
 
-    public House(int nobedrooms, int nobathrooms, int nofloors, String style, boolean garage) {
+    public House(int nobedrooms, double nobathrooms, int nofloors, String style, boolean garage) {
         this.nobedrooms = nobedrooms;
         this.nobathrooms = nobathrooms;
         this.nofloors = nofloors;
         this.style = style;
         this.garage = garage;
+    }
+
+    public String getStyle() {
+        return style;
+    }
+
+    public void setStyle(String style) {
+        this.style = style;
     }
 
     public int getNobedrooms() {
@@ -24,11 +32,11 @@ public class House {
         this.nobedrooms = nobedrooms;
     }
 
-    public int getNobathrooms() {
+    public double getNobathrooms() {
         return nobathrooms;
     }
 
-    public void setNobathrooms(int nobathrooms) {
+    public void setNobathrooms(double nobathrooms) {
         this.nobathrooms = nobathrooms;
     }
 
@@ -38,14 +46,6 @@ public class House {
 
     public void setNofloors(int nofloors) {
         this.nofloors = nofloors;
-    }
-
-    public String getStyle() {
-        return style;
-    }
-
-    public void setStyle(String style) {
-        this.style = style;
     }
 
     public boolean isGarage() {
@@ -59,13 +59,14 @@ public class House {
     public String getHouseInfo() {
         String result = "The house is a ";
 
-        result = result + getNofloors() + " floor(s)" +
+        result = result +
                  getStyle() + " style house with " +
+                 getNofloors() + " floor(s)" +
                  getNobedrooms() + " bedrooms, " +
                  getNobathrooms() + " bathrooms, ";
 
         if (isGarage())
-            result = result + "and with garage";
+            result = result + "and with a garage";
         else
             result = result + "and without any garage";
 

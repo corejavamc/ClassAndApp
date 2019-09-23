@@ -65,16 +65,16 @@ public class Book {
     }
 
     /*
-     * getDisplayText() which prints the author, title and description.
+     * displayText() which prints the author, title and description.
      */
-    public String getDisplayText() {
+    public String displayText() {
         return "Author: " + getAuthor() +
                "\nTitle: " + getTitle() +
                "\nDescription: " + getDescription();
     }
 
     /*
-     * Create a method that returns the pricing for a requested number of books.
+     * Create a method that returns a price for a requested number of books.
      * As an example, five books at $20.00 should return $100, if they are in stock.
      * If they are not in stock, that should be handled appropriately (hint - you decide).
      */

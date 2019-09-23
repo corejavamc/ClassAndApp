@@ -16,18 +16,22 @@ public class BookApplication {
         book.setInStock(true);
 
         System.out.println("Book 1:");
-        System.out.println(book.getDisplayText());
+        System.out.println(book.displayText());
         System.out.println();
 
         Book book2 = new Book("How to write a resume", "John Doe",
                     "Guide to writing a resume with examples", 9.99, false);
         System.out.println("Book 2:");
-        System.out.println(book2.getDisplayText());
+        System.out.println(book2.displayText());
 
 
         Scanner keybd = new Scanner(System.in);
         int count;
 
+
+        /*
+         * Call a method that returns the price of a requested number of books.
+         */
         System.out.println("Enter a number of the first book: ");
         count = keybd.nextInt();
         keybd.nextLine();
