@@ -7,7 +7,9 @@ import java.util.Scanner;
 
 public class BookApplication {
     public static void main(String args[]) {
-
+        /*
+         * Create an instance of a Book class using a default constructor
+         */
         Book book = new Book();
         book.setTitle("Introduction to Java Spring Boot: Learning By Coding");
         book.setAuthor("Henley, Wolf, Ankomah, Lee, Phimphachanh");
@@ -19,6 +21,9 @@ public class BookApplication {
         System.out.println(book.displayText());
         System.out.println();
 
+        /*
+         * Create an instance of a Book class using an overloaded constructor
+         */
         Book book2 = new Book("How to write a resume", "John Doe",
                     "Guide to writing a resume with examples", 9.99, false);
         System.out.println("Book 2:");
@@ -30,18 +35,28 @@ public class BookApplication {
 
 
         /*
-         * Call a method that returns the price of a requested number of books.
+         * Ask user for the number of the first book to be used to compute
+         * the total price
          */
         System.out.println("Enter a number of the first book: ");
         count = keybd.nextInt();
         keybd.nextLine();
 
+        /*
+         * Call a method to compute the total price of the first book
+         */
         System.out.println(book.computePrice(count));
 
+        /*
+         * Ask user for the number of the second book
+         */
         System.out.println("Enter a number of the second book: ");
         count = keybd.nextInt();
         keybd.nextLine();
 
+        /*
+         * Call a method to compute the total price of the second book
+         */
         System.out.println(book2.computePrice(count));
 
     }
