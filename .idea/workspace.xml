@@ -39,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Transcript.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="225">
+              <caret line="47" column="28" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="28" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
                 <element signature="e#428#429#0" expanded="true" />
@@ -56,17 +56,18 @@
                 <element signature="e#645#646#0" expanded="true" />
                 <element signature="e#690#691#0" expanded="true" />
                 <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
                 <element signature="e#815#816#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TranscriptApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="38">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -273,12 +274,12 @@
       <updated>1568915611727</updated>
       <workItem from="1568915616459" duration="13858000" />
       <workItem from="1569246723152" duration="26834000" />
-      <workItem from="1569441310341" duration="6555000" />
+      <workItem from="1569441310341" duration="7568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47247000" />
+    <option name="totallyTimeSpent" value="48260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -292,7 +293,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37245697" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.58528954" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5508607" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -300,7 +301,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6823161" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.6823161" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3286385" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -316,24 +317,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Transcript.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/TranscriptApp.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Greeting.java">
@@ -584,20 +567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TranscriptApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Transcript.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="225">
+          <caret line="47" column="28" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="28" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
             <element signature="e#428#429#0" expanded="true" />
@@ -610,7 +583,18 @@
             <element signature="e#645#646#0" expanded="true" />
             <element signature="e#690#691#0" expanded="true" />
             <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
             <element signature="e#815#816#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TranscriptApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
