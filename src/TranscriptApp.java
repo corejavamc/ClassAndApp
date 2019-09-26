@@ -53,6 +53,7 @@ public class TranscriptApp {
             }
 
             transcripts.add(transcript);
+
             System.out.println("Another transcript? (y/n)");
             userStr = keybd.nextLine();
             if (userStr.equalsIgnoreCase("n"))
@@ -62,19 +63,14 @@ public class TranscriptApp {
 
 
         for (Transcript onetrans : transcripts) {
-            System.out.println("Student: " + onetrans.getName() + "\n");
+            System.out.println("Student Information");
+            System.out.println(onetrans.displayInfo());
+            System.out.println("\nName\tNumber\tCredit\tGrade");
 
-            sum = 0;
-            counter = 0;
-            System.out.println("Name\tNumber\tCredit\tGrade");
-            for (Course one : transcript.getCourses()) {
-                gpa = one.convertGPA();
-                System.out.println(one.displayText() + "\t\tGPA: " + gpa);
-                sum = sum + gpa;
-                counter++;
-            }
-            gpa = sum / counter;
-            System.out.println("\t\t\tOverall GPA: " + gpa + "\n");
+            for (Course one : onetrans.getCourses())
+                System.out.println(one.displayText() + "\t\tGPA: " + one.convertGPA());
+
+            System.out.println("\t\t" + onetrans.displayOverallGPA() + "\n");
         }
 
      }

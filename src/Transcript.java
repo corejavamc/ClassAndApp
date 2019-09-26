@@ -48,11 +48,25 @@ public class Transcript {
         double result = 0.0;
 
         for (Course one : getCourses()) {
-            sum = sum + one.convertGPA();
-            counter++;
+            result = one.convertGPA();
+            sum = sum + result;
+            if (!one.getGrade().equalsIgnoreCase("p") &&
+                !one.getGrade().equalsIgnoreCase("f"))
+                counter++;
         }
 
         result = sum / counter;
+        return result;
+    }
+
+    public String displayOverallGPA() {
+        String result = "Overall GPA: " + getOverallGPA();
+
+        return result;
+    }
+
+    public String displayInfo() {
+        String result = "Name: " + getName() + "\nId: " + getId();
         return result;
     }
 }
